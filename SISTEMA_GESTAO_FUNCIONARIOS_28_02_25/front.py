@@ -248,7 +248,6 @@ class SistemaGestaoFuncionarios:
 
 # Inicialização da aplicação
 if __name__ == "__main__":  # Verifica se o script está sendo executado diretamente.
-    i = 1
     root = tk.Tk()  # Cria a janela principal da aplicação.
     sistema = SistemaGestaoFuncionarios(root)  # Cria uma instância do sistema de gestão de funcionários.
     root.mainloop()  # Inicia o loop principal da interface gráfica.
