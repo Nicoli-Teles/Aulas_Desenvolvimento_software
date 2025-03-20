@@ -9,7 +9,7 @@ class Aluno:
         self.nota_2 =  nota_2
 
     def __str__(self):
-        return(f"Nome: {self.nome} / idade: {self.serie} / Série:{self.serie} / Período: {self.periodo}")
+        return(f"Nome: {self.nome} / idade: {self.idade} / Série:{self.serie} / Período: {self.periodo}")
     def calcular_media(self):
         media= (self.nota_1 + self.nota_2) / 2
         print(f"a média do aluno foi de: {media}")
