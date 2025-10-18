@@ -1,0 +1,142 @@
+
+.card_nome_funcao {
+
+  position: absolute;       /* posicionamento absoluto */
+  top: 250px;               /* distância do topo da página */
+  right: 350px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 300px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+}
+/* Nome do usuário */
+.card_info_basicas .nome {
+  font-size: 28px;          /* Tamanho da fonte */
+  font-weight: bold;        /* Negrito */
+  color: #080000;           /* Cor do texto */
+  text-align: center;       /* Centraliza o texto */
+}
+/* Função do usuário */
+.card_info_basicas .funcao {
+  font-size: 22px;
+  color: #000504;
+  text-align: center;
+}
+
+
+
+.card_pais_cidade {
+  position: absolute;       /* posicionamento absoluto */
+  top: 390px;               /* distância do topo da página */
+  right: 350px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 300px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+}
+
+/* País do usuário */
+.card_info_basicas .pais {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Cidade do usuário */
+.card_info_basicas .cidade {
+  font-size: 20px;
+  color: #030000;
+  text-align: center;
+}
+
+.card_sobre_mim {
+  position: absolute;       /* posicionamento absoluto */
+  top: 560px;               /* distância do topo da página */
+  right: 350px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+}
+
+.sobre_mim {
+  font-size: 20px;
+  color: #030000;
+  text-align: center;
+  max-width: 500px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+.card_contatos1{
+  position: absolute;       /* posicionamento absoluto */
+  top: 262px;               /* distância do topo da página */
+  left: 710px;              /* distância da borda direita */
+  line-height: 7;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+}
+
+.card_contatos2{
+  position: absolute;       /* posicionamento absoluto */
+  top: 352px;               /* distância do topo da página */
+  left: 695px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+}
+
+.telefone, .linkedin {
+  font-size: 15px;
+  color: #030000;
+  text-align: center;    
+
+}
+
+.email, .github {
+  font-size: 15px;
+  color: #030000;
+  text-align: center;   
+
+    }
+ .card_habilidades {
+  position: absolute;       /* posicionamento absoluto */
+  top: 690px;               /* distância do topo da página */
+  left: 600px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+ }
+
+ .habilidades-lista {
+  font-size: 20px;
+  color: #030000;
+  text-align: center;
+ }
+
+
+.add-habilidade {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #00A452;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+

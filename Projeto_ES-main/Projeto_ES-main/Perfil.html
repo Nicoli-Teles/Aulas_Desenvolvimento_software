@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projack Impulse - Perfil</title>
+
+  <link rel="stylesheet" href="/css_perfil/geral.css">
+  <link rel="stylesheet" href="/css_perfil/botoes.css">
+  <link rel="stylesheet" href="/css_perfil/imagens.css">
+  <link rel="stylesheet" href="/css_perfil/esquerda.css">
+  <link rel="stylesheet" href="/css_perfil/dados.css">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poetsen+One&family=Quantico&display=swap" rel="stylesheet">
+
+<!-- cabeçalho de notificação canto direito -->
+</head>
+<body>
+    <div class = "cabecalho">
+  
+        <div class = "notificacao">
+          <img id="notificacao-btn" src="imagens_perfil/notificacao.png" alt="Notificações">
+        </div>
+      
+    </div>
+
+<!-- Container da notificação -->
+  <div id="notificacao-container">
+    <p>Você tem novas notificações!</p>
+  </div>
+  <script>
+    const btn = document.getElementById('notificacao-btn');
+    const container = document.getElementById('notificacao-container');
+
+    btn.addEventListener('click', () => {
+      // Alterna entre mostrar e esconder o container
+      if (container.style.display === 'none' || container.style.display === '') {
+        container.style.display = 'block';
+      } else {
+        container.style.display = 'none';
+      }
+    });
+  </script>
+<!-- retangulo verde lado esquerdo -->
+        <div class = "conteudo_esquerda">
+          <img src="/imagens_perfil/logo.png" alt="logo" class="logo"/>
+          <img src="/imagens_perfil/janela_clipe.png" alt="janela com foto e clipe" class="janela_clipe"/>
+          <p class="idealizador">Idealizador<br/> </p>
+
+          <!-- retangulo verde lado esquerdo : Menu -->
+          <div class="info_menu1">
+          <a class= "menu1" href="/meu_perfil">
+            <img src="/imagens_perfil/meu_perfil.png" alt="logo" class="icon"/>
+           <span>Meu Perfil<br/></span></a>
+          </div>
+          <div class="info_menu2">
+          <a class= "menu2" href="/meus_projetos"> 
+            <img src="/imagens_perfil/meus_projetos.png" alt="logo" class="icon"/>
+            <span>Meus Projetos</span></a>
+          
+          </div>
+      </div>
+    </div>
+
+<!-- Conteúdo lado direito -->
+ 
+  <img src="/imagens_perfil/perfil.png" alt="logo" class="perfil"/> 
+  <img src="/imagens_perfil/info_basicas.png" alt="logo" class="info_basicas"/>
+  <img src="/imagens_perfil/contatos.png" alt="logo" class="contatos"/>
+  <img src="/imagens_perfil/habilidades.png" alt="logo" class="habilidades"/>
+
+
+<!-- Conteúdo informações do usuário -->
+
+  
+
+    <!-- Informações básicas -->
+    <div class="card_nome_funcao">
+
+       <p class="nome">{{ nome_usuario }}</p>
+       <p class="funcao">{{ funcao_usuario }}</p>
+    </div>
+    <div class = "card_pais_cidade">
+       <p class="pais">{{ pais_usuario }}<br></p>
+       <p class="cidade">{{ cidade_usuario }}<br></p>
+    </div>
+ 
+    <!-- Sobre mim -->
+    <div class = "card_sobre_mim">
+        <p class="sobre_mim">{{ sobre_mim_usuario }}</p>
+    </div>
+
+    <!-- Contatos -->
+    <div class = "card_contatos1">
+        <p class="telefone">{{ tlefone_usuario }}</p>
+        <p class="linkedin">{{ linkedin_usuario }}</p>
+    </div>
+    <div class = "card_contatos2">
+        <p class="email">{{ email_usuario }}</p>
+        <p class="github">{{ github_usuario }}</p>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="card_habilidades">
+      <div class="habilidades-lista" id="habilidades-lista">
+        <input type="text" name="habilidades[]" value="{{ habilidade }}" disabled>
+      </div>
+      <button type="button" class="add-habilidade" id="add-habilidade" disabled>+ Adicionar</button>
+    </div>
+
+      <!-- BOTÕES -->
+      <div class="botoes">
+        <div class="botoes-perfil">
+          <button class="botao-editar" id="editarPerfilBtn">Editar Perfil</button>
+          <button class="botao-excluir" id="excluirPerfilBtn">Excluir Perfil</button>
+          <form action="{{ url_for('logout') }}" method="get">
+            <button type="submit" class="botao-logout">Sair</button>
+          </form>
+        </div>
+      </div>
+
+
+</script>
+</script>
+</body>
+<html>
