@@ -1,0 +1,271 @@
+
+.card_nome_funcao {
+
+  position: absolute;       /* posicionamento absoluto */
+  top: 250px;               /* distância do topo da página */
+  right: 200px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 300px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+}
+/* Nome do usuário */
+.card_info_basicas .nome {
+  font-size: 28px;          /* Tamanho da fonte */
+  font-weight: bold;        /* Negrito */
+  color: #080000;           /* Cor do texto */
+  text-align:left;       /* Centraliza o texto */
+}
+/* Função do usuário */
+.card_info_basicas .funcao {
+  font-size: 22px;
+  color: #000504;
+  text-align:left;
+}
+
+
+
+.card_pais_cidade {
+  position: absolute;       /* posicionamento absoluto */
+  top: 390px;               /* distância do topo da página */
+  right: 390px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+  text-align:left;
+  
+
+}
+
+/* País do usuário */
+.card_info_basicas .pais {
+  right: 0;
+  font-size: 20px;
+  color: #000000;
+  text-align: left;
+}
+
+/* Cidade do usuário */
+.card_info_basicas .cidade {
+  font-size: 20px;
+  color: #030000;
+  text-align: left;
+}
+
+.card_sobre_mim {
+  position: absolute;       /* posicionamento absoluto */
+  top: 560px;               /* distância do topo da página */
+  right: 250px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 420px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+  max-height: 280px;     /* altura máxima visível */
+  overflow-y: auto;      /* cria barra de rolagem vertical se precisar */
+}
+
+.sobre_mim {
+  font-size: 20px;
+  color: #030000;
+  text-align: center;
+  max-width: 500px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+.card_contatos1{
+  position: absolute;       /* posicionamento absoluto */
+  top: 262px;               /* distância do topo da página */
+  left: 710px;              /* distância da borda direita */
+  line-height: 7;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+}
+
+.card_contatos2{
+  position: absolute;       /* posicionamento absoluto */
+  top: 352px;               /* distância do topo da página */
+  left: 695px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 500px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+
+}
+
+.telefone, .linkedin {
+  font-size: 15px;
+  color: #030000;
+  text-align: left;    
+
+}
+
+.email, .github {
+  font-size: 15px;
+  color: #030000;
+  text-align: left;   
+
+    }
+ .card_habilidades {
+  position: absolute;       /* posicionamento absoluto */
+  top: 670px;               /* distância do topo da página */
+  left: 600px;              /* distância da borda direita */
+  line-height: 1;            /* altura da linha (multiplicador do font-size) */
+  display: flex;            
+  flex-direction: column;   /* elementos em coluna */
+  max-width: 600px;         /* largura máxima do card */
+  z-index: 799;             /* garante que fique na frente */
+  max-height: 200px;     /* altura máxima visível */
+  overflow-y: auto;      /* cria barra de rolagem vertical se precisar */
+  
+ }
+
+ .habilidades-lista {
+  font-size: 20px;
+  color: #030000;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+ }
+
+
+.add-habilidade {
+  margin-top: 10px;
+  max-width: 100px;
+  padding: 8px 16px;
+  background: #00A452;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nova-habilidade {
+  border: 1px solid #00A452;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #030000;
+  outline: none;
+}
+
+.nova-habilidade:focus {
+  border-color: #008e3a;
+  box-shadow: 0 0 5px #00A452;
+}
+
+
+.img-botao-editar {
+  position: absolute;
+  top: 15px;
+  right: 270px;
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index:800 ;
+}
+
+.img-botao-editar:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+/* container de cada habilidade */
+.habilidade-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+/* botão de remover (❌) */
+.remover-habilidade {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.remover-habilidade:hover {
+  background: #e00000;
+}
+
+
+/* ===================== MODAL ===================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  min-height: 100px;     /* 👈 altura mínima visível */
+  max-height: 250px;     /* 👈 impede que fique gigante */
+  resize: vertical;      /* 👈 permite redimensionar apenas na vertical */
+  overflow-y: auto;      /* 👈 adiciona scroll se o texto for muito grande */
+  padding: 8px;
+  border: 1px solid #00A452;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.4;      /* melhora a leitura */
+  box-sizing: border-box;
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  background-color: #00A452;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-buttons button:hover {
+  background-color: #008e3a;
+}

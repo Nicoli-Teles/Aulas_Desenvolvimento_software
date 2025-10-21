@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projack Impulse - Perfil</title>
+
+  <link rel="stylesheet" href="/css_perfil/geral.css">
+  <link rel="stylesheet" href="/css_perfil/botoes.css">
+  <link rel="stylesheet" href="/css_perfil/imagens.css">
+  <link rel="stylesheet" href="/css_perfil/esquerda.css">
+  <link rel="stylesheet" href="/css_perfil/dados.css">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poetsen+One&family=Quantico&display=swap" rel="stylesheet">
+
+<!-- cabeçalho de notificação canto direito -->
+</head>
+<body>
+    <div class = "cabecalho">
+  
+        <div class = "notificacao">
+          <img id="notificacao-btn" src="imagens_perfil/notificacao.png" alt="Notificações">
+        </div>
+      
+    </div>
+
+<!-- Container da notificação -->
+  <div id="notificacao-container">
+    <p>Você tem novas notificações!</p>
+  </div>
+  <script>
+    const btn = document.getElementById('notificacao-btn');
+    const container = document.getElementById('notificacao-container');
+
+    btn.addEventListener('click', () => {
+      // Alterna entre mostrar e esconder o container
+      if (container.style.display === 'none' || container.style.display === '') {
+        container.style.display = 'block';
+      } else {
+        container.style.display = 'none';
+      }
+    });
+  </script>
+<!-- retangulo verde lado esquerdo -->
+        <div class = "conteudo_esquerda">
+          <img src="/imagens_perfil/logo.png" alt="logo" class="logo"/>
+          <img src="/imagens_perfil/janela_clipe.png" alt="janela com foto e clipe" class="janela_clipe"/>
+          <p class="idealizador">Idealizador<br/> </p>
+
+          <!-- retangulo verde lado esquerdo : Menu -->
+          <div class="info_menu1">
+          <a class= "menu1" href="/Perfil.html">
+            <img src="/imagens_perfil/meu_perfil.png" alt="logo" class="icon"/>
+           <span>Meu Perfil<br/></span></a>
+          </div>
+          <div class="info_menu2">
+          <a class= "menu2" href="/Projetos.html"> 
+            <img src="/imagens_perfil/meus_projetos.png" alt="logo" class="icon"/>
+            <span>Meus Projetos</span></a>
+          
+          </div>
+      </div>
+    </div>
+
+<!-- Conteúdo lado direito -->
+ 
+  <img src="/imagens_perfil/perfil.png" alt="logo" class="perfil"/> 
+  <img src="/imagens_perfil/info_basicas.png" alt="logo" class="info_basicas"/>
+  <img src="/imagens_perfil/contatos.png" alt="logo" class="contatos"/>
+  <img src="/imagens_perfil/habilidades.png" alt="logo" class="habilidades"/>
+
+
+<!-- Conteúdo informações do usuário -->
+
+  
+
+    <!-- Informações básicas -->
+    <div class="card_nome_funcao">
+
+       <p class="nome">Fabricio silva pereira arnaldo da criz de azevedo</p>
+       <p class="funcao">desenvolvedor freelanceerrr</p>
+    </div>
+    <div class = "card_pais_cidade">
+       <p class="pais">Jasfgrtere<br></p>
+       <p class="cidade">Marajó da santa Cruz<br></p>
+    </div>
+ 
+    <!-- Sobre mim -->
+    <div class = "card_sobre_mim">
+        <p class="sobre_mim">Sou alguem sabio, que tira notas boas nas provas, gsoto de conversar sei de coisas legais, sei fazer sites, sei fazer bolos, sei idiomas, estou em busca de crescimento!ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+    </div>
+
+    <!-- Contatos -->
+    <div class = "card_contatos1">
+        <p class="telefone">1599999384752</p>
+        <p class="linkedin">847623und@jsdfhd</p>
+    </div>
+    <div class = "card_contatos2">
+        <p class="email">anonimo@gamil.com.brsefsdf</p>
+        <p class="github">anderson figueira melo</p>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="card_habilidades">
+      <div class="habilidades-lista" id="habilidades-lista">
+        <input type="text" name="habilidades[]" value="CSS" disabled>
+        <input type="text" name="habilidades[]" value="HTML" disabled>
+      </div>
+      <button type="button" class="add-habilidade" id="add-habilidade" disabled>+ Adicionar</button>
+    </div>
+
+
+<!-- ======================== BOTÃO EDITAR PERFIL ======================== -->
+<img id="editarPerfilBtn" src="/imagens_perfil/editar.png" alt="Editar Perfil" class="img-botao-editar">
+<!-- ======================== MODAL DE EDIÇÃO ======================== -->
+
+<!-- Modal de Edição -->
+<div id="modal-edicao" class="modal">
+  <div class="modal-content">
+    <h2>Editar Perfil</h2>
+
+    <label>Nome:</label>
+    <input type="text" id="edit-nome">
+
+    <label>Função:</label>
+    <input type="text" id="edit-funcao">
+
+    <label>País:</label>
+    <input type="text" id="edit-pais">
+
+    <label>Cidade:</label>
+    <input type="text" id="edit-cidade">
+
+    <label>Sobre mim:</label>
+    <textarea id="edit-sobre"></textarea>
+
+    <label>Telefone:</label>
+    <input type="text" id="edit-telefone">
+
+    <label>LinkedIn:</label>
+    <input type="text" id="edit-linkedin">
+
+    <label>Email:</label>
+    <input type="text" id="edit-email">
+
+    <label>GitHub:</label>
+    <input type="text" id="edit-github">
+
+    <div class="modal-buttons">
+      <button id="salvar-edicao">Salvar</button>
+      <button id="cancelar-edicao">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+
+</script>
+</script>
+<script src="/js/habilidades.js"></script>
+<script src="/js/modal_edicao.js"></script>
+</body>
+<html>
