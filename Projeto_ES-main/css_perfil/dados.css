@@ -1,28 +1,31 @@
 
 .card_nome_funcao {
-
-  position: absolute;       /* posicionamento absoluto */
-  top: 250px;               /* distância do topo da página */
-  right: 200px;              /* distância da borda direita */
-  line-height: 1;            /* altura da linha (multiplicador do font-size) */
-  display: flex;            
-  flex-direction: column;   /* elementos em coluna */
-  max-width: 300px;         /* largura máxima do card */
-  z-index: 799;             /* garante que fique na frente */
-
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  z-index: 799;
+  line-height: 1;
 }
+
 /* Nome do usuário */
-.card_info_basicas .nome {
-  font-size: 28px;          /* Tamanho da fonte */
+.nome {
+  font-size: 15px;          /* Tamanho da fonte */
   font-weight: bold;        /* Negrito */
   color: #080000;           /* Cor do texto */
   text-align:left;       /* Centraliza o texto */
+  font-weight: bold;
+  margin: 0; /* Remove margens indesejadas */
 }
 /* Função do usuário */
-.card_info_basicas .funcao {
-  font-size: 22px;
-  color: #000504;
+.funcao {
+  font-size: 14px;
+  color: #464747;
   text-align:left;
+  line-height: 0.25;
+  
 }
 
 
